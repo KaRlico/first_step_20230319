@@ -1,0 +1,51 @@
+body {
+    margin:0px;
+}
+a {
+    color:black;
+    text-decoration: none;
+}
+h1 {
+    text-align:center;
+    font-size:xx-large;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+}
+h2 {
+    font-size:x-large;
+    margin:0px;
+}
+.highol {
+    border-right:1px solid;
+    width:350px;
+    margin:0px;
+    line-height:40px;
+    padding:50px;
+}
+.lowol {
+    margin-bottom:40px;
+    font-size:small;
+}
+#grid {
+    display:grid;
+    grid-template-columns: 400px 1fr;
+}
+#article {
+    padding-top:20px;
+    padding-left:70px;
+}
+@media(max-width:800px) {
+    #grid {
+        display:block;
+    }
+    .highol { 
+        border-right:none;
+    }
+    h1 {
+        border-bottom:none;
+    }
+}        
+/*
+#grid ol {} -> 그리드 값 안에 있는 ol이라고 지정 할 수 있음 
+*/
